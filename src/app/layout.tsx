@@ -16,9 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Next js GitHub OAuth Template",
-  description:
-    "Next js GitHub OAuth Template without any external auth dependencies.",
+  title: "P-Gen",
+  description: "Portfolio generator Utility",
 };
 
 export default function RootLayout({
