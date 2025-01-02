@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 const GetStarted = () => {
   return (
@@ -12,14 +12,14 @@ const GetStarted = () => {
               Get Started
             </h2>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Start using our Next.js GitHub OAuth Template in your project
-              today. Its easy to set up and customize.
+              Start using P-Gen in your project today. Its easy to set up and
+              customize.
             </p>
           </div>
           <div className="w-full max-w-sm space-y-2">
             <Button className="w-full" size="lg">
-              <Link href="https://github.com/hamdan-khan/nextjs-github-oauth">
-                Clone Repository
+              <Link href="https://github.com/hamdan-khan/p-gen">
+                View Repository
               </Link>
             </Button>
           </div>

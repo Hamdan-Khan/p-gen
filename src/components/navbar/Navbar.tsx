@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Github } from "lucide-react";
 import { SessionManager } from "@/app/api/session";
-import GithubSignInButton from "../GithubLoginButton";
-import GithubSignOutButton from "../GithubSignOutButton";
+import GithubSignInButton from "@/components/navbar/GithubLoginButton";
+import GithubSignOutButton from "@/components/navbar/GithubSignOutButton";
 import NavLinks from "./NavLinks";
 
 const Navbar = async () => {
@@ -11,7 +11,7 @@ const Navbar = async () => {
     <header className="px-4 lg:px-6 h-14 flex items-center">
       <Link className="flex items-center justify-center" href="/">
         <Github className="h-6 w-6 mr-2" />
-        <span className="font-bold">Next.js GitHub OAuth Template</span>
+        <span className="font-bold">P-Gen</span>
       </Link>
       <nav className="ml-auto flex items-center gap-4 sm:gap-6">
         <NavLinks />

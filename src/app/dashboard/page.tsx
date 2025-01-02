@@ -1,7 +1,7 @@
 import Profile from "@/components/dashboard/Profile";
 import React from "react";
 import { SessionManager } from "../api/session";
-import GithubSignInButton from "@/components/GithubLoginButton";
+import GithubSignInButton from "@/components/navbar/GithubLoginButton";
 
 export default async function Dashboard() {
   const session = await SessionManager.getSession();

@@ -1,6 +1,6 @@
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import GetStarted from "@/components/GetStarted";
+import Hero from "@/components/home/Hero";
+import Features from "@/components/home/Features";
+import GetStarted from "@/components/home/GetStarted";
 
 export default async function Home() {
   return (

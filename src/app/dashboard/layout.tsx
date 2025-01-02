@@ -1,4 +1,4 @@
-import GithubLoginButton from "@/components/GithubLoginButton";
+import GithubLoginButton from "@/components/navbar/GithubLoginButton";
 import { SessionManager } from "../api/session";
 
 export default async function Layout({

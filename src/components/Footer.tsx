@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
       <p className="text-xs text-gray-500 dark:text-gray-400">
-        © 2024 Next.js GitHub OAuth Template. All rights reserved.
+        © 2025 P-Gen. All rights reserved.
       </p>
     </footer>
   );
