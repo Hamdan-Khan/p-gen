@@ -5,20 +5,11 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "../ui/card";
-import {
-  CalendarDays,
-  GitBranch,
-  GitCommit,
-  GitPullRequest,
-  MapPin,
-  Users,
-} from "lucide-react";
+import { CalendarDays, GitBranch, MapPin, Users } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
-import { Button } from "../ui/button";
 import { Session } from "@/app/api/session";
 import { useState } from "react";
 
@@ -49,9 +40,9 @@ const Profile = ({ session }: { session: Session }) => {
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab}>
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="profile">Profile</TabsTrigger>
-            <TabsTrigger value="activity">Activity</TabsTrigger>
+            {/* <TabsTrigger value="activity">Activity</TabsTrigger> */}
             <TabsTrigger value="stats">Stats</TabsTrigger>
           </TabsList>
           <TabsContent value="profile">
@@ -80,7 +71,7 @@ const Profile = ({ session }: { session: Session }) => {
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="activity">
+          {/* <TabsContent value="activity">
             <Card>
               <CardHeader>
                 <CardTitle>Recent Activity</CardTitle>
@@ -106,7 +97,7 @@ const Profile = ({ session }: { session: Session }) => {
                 </Button>
               </CardFooter>
             </Card>
-          </TabsContent>
+          </TabsContent> */}
           <TabsContent value="stats">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
               <Card>
